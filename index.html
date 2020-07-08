@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todolist</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="icon" href="../public/img/icon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/ab3a164183.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="title"><img src="../public/img/title.png" alt="" /></div>
+      <div class="inputBar">
+        <input
+          class="settodo"
+          id="myInput"
+          type="text"
+          placeholder="快寫在這裡"
+        />
+        <div class="select">
+          <span class="holderplace"
+            >選個標籤<i class="choose-icon fas fa-angle-down"></i
+          ></span>
+          <ul class="chooselist">
+            <li class="chooselist-item" data-color="red">
+              <img src="../public/img/dot_orange.png" alt="" /> RED
+            </li>
+            <li class="chooselist-item" data-color="yellow">
+              <img src="../public/img/dot_yellow.png" alt="" /> YE
+            </li>
+            <li class="chooselist-item" data-color="blue">
+              <img src="../public/img/dot_blue.png" alt="" /> BLUE
+            </li>
+          </ul>
+        </div>
+        <div class="addtodo"></div>
+      </div>
+      <div class="listPosition">
+        <ul class="list"></ul>
+      </div>
+      <div class="alertBg"></div>
+      <div class="alertPosit">
+        <div class="alertBox">
+          <div class="alertBtn"><i class="fas fa-times"></i></div>
+          <p class="alertText">資料要填完整喔~</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

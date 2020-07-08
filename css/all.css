@@ -1,0 +1,382 @@
+body {
+  background-image: url(../img/bg_body.png);
+}
+
+.settodo {
+  width: 50%;
+  margin-right: 3%;
+  font-family: "Microsoft JhengHei";
+  background: none;
+  font-weight: 600;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-size: 1.5rem;
+}
+
+.settodo:focus {
+  outline: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 5%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title img {
+  width: 60%;
+}
+
+.wrap {
+  width: 1000px;
+  padding-top: 3%;
+  margin: 0 auto;
+}
+
+.inputBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.listPosition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.selectmenu {
+  width: 30%;
+  border: 1px solid;
+}
+
+.holderplace {
+  position: relative;
+  background-image: url(../img/select_btn.png);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  padding-top: 5px;
+  width: 129px;
+  height: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Microsoft JhengHei";
+  font-weight: 550;
+  letter-spacing: 0.2rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.holderplace:hover {
+  background-image: url(../img/select_btn_hover.png);
+}
+
+.chooselist {
+  border: 1px solid;
+  margin-top: 5px;
+  text-align: center;
+  position: absolute;
+  display: none;
+  background-color: #f7f8f3;
+}
+
+.chooselist img {
+  padding-right: 5%;
+}
+
+.chooselist li {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Microsoft JhengHei";
+  font-weight: 600;
+  width: 100px;
+  cursor: pointer;
+}
+
+.chooselist li:hover {
+  background-color: #fbffd4;
+}
+
+.addtodo {
+  margin-left: 1%;
+  width: 95px;
+  height: 47px;
+  cursor: pointer;
+  background-image: url(../img/btn01.png);
+}
+
+.addtodo:hover {
+  background-image: url(../img/btn_hover.png);
+}
+
+.list {
+  width: 80%;
+}
+
+.list span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  letter-spacing: 0.1rem;
+}
+
+.list li {
+  font-size: 1.3rem;
+  border-bottom: dashed 1.5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Microsoft JhengHei";
+  font-weight: 500;
+  padding: 2% 0;
+}
+
+.delebtn {
+  cursor: pointer;
+}
+
+.dotimg {
+  padding-right: 5%;
+}
+
+.list > .nocontent {
+  border-bottom: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(82, 82, 82, 0.691);
+  font-size: 1.8rem;
+}
+
+.alertBg {
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.123);
+}
+
+.alertPosit {
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -150px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.alertBox {
+  position: relative;
+  height: 200px;
+  width: 300px;
+  margin: 0 auto;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-image: url(../img/alert_bg.png);
+}
+
+.alertBox p {
+  text-align: center;
+  padding-top: 30%;
+  font-family: "Microsoft JhengHei";
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+}
+
+.alertBtn {
+  position: absolute;
+  margin-top: -18px;
+  right: -16px;
+  background-color: #000000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.alertBtn:hover {
+  background-color: #5a5a5a;
+}
+
+.alertBtn i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30%;
+  color: #ffff;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*# sourceMappingURL=all.css.map */
