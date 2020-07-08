@@ -64,7 +64,6 @@ function addItem() {
 //從local取出 放在網頁上
 function getItem() {
   let todolist = JSON.parse(localStorage.getItem("list"));
-  console.log(todolist);
   if (todolist == null || todolist.length == 0) {
     list.innerHTML = "<li class='nocontent'>快來建立夢想吧~</li>";
     return;
