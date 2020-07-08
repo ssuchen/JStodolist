@@ -72,9 +72,9 @@ function getItem() {
 
   todoitem = "";
   for (let i = 0; i < todolist.length; i++) {
-    todoitem += `<li><span><img class="dotimg" src="../public/img/${todolist[i].color}" >
+    todoitem += `<li><span><img class="dotimg" src="img/${todolist[i].color}" >
     ${todolist[i].text}</span>
-    <img data-num="${i}" class="delebtn" src="../public/img/dele_btn.png" onMouseOver="this.src='../public/img/dele_btn_hover.png'" onMouseOut="this.src='../public/img/dele_btn.png'"></img>
+    <img data-num="${i}" class="delebtn" src="img/dele_btn.png" onMouseOver="this.src='img/dele_btn_hover.png'" onMouseOut="this.src='img/dele_btn.png'"></img>
     </li>`;
   }
   list.innerHTML = todoitem;
@@ -131,19 +131,19 @@ function chooseitem(e) {
     case "red":
       dotColor = "dot_orange.png";
       content.innerHTML =
-        '<img src="../public/img/dot_orange.png" alt="" />RED<i class="choose-icon fas fa-angle-down"></i>';
+        '<img src="img/dot_orange.png" alt="" />RED<i class="choose-icon fas fa-angle-down"></i>';
       closelist();
       return;
     case "yellow":
       dotColor = "dot_yellow.png";
       content.innerHTML =
-        '<img src="../public/img/dot_yellow.png" alt="" />YE<i class="choose-icon fas fa-angle-down"></i>';
+        '<img src="img/dot_yellow.png" alt="" />YE<i class="choose-icon fas fa-angle-down"></i>';
       closelist();
       return;
     case "blue":
       dotColor = "dot_blue.png";
       content.innerHTML =
-        '<img src="../public/img/dot_blue.png" alt="" />BLUE<i class="choose-icon fas fa-angle-down"></i>';
+        '<img src="img/dot_blue.png" alt="" />BLUE<i class="choose-icon fas fa-angle-down"></i>';
       closelist();
       return;
   }
